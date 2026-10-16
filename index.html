@@ -6,20 +6,84 @@
 		<title>
 			Серия медицинских email-шаблонов для аптечной сети Сердце России
 		</title>
+
 		<style>
-			.wrapper {
-				margin-top: 20px;
-				display: flex;
-				justify-content: center;
-				gap: 20px;
+			body {
+				font-family: -apple-system, "PT Sans", sans-serif;
+				background: #f8f9fa;
+				margin: 0;
+				padding: 40px 20px;
+				color: #495057;
 			}
-		</style>
+
+			.container {
+				max-width: 700px;
+				margin: 0 auto;
+			}
+
+			h1 {
+				text-align: center;
+				font-size: 24px;
+				margin-bottom: 8px;
+			}
+
+			p {
+				text-align: center;
+				color: #6c757d;
+				margin-top: 0;
+				margin-bottom: 32px;
+			}
+
+			.cards {
+				display: grid;
+				gap: 16px;
+			}
+
+			.card {
+				display: block;
+				padding: 24px;
+				background: #fff;
+				border-radius: 10px;
+				text-decoration: none;
+				color: #495057;
+				border: 1px solid #dee2e6;
+				transition: border-color 0.2s;
+			}
+
+			.card:hover {
+				border-color: #349546;
+			}
+
+			.card__title {
+				font-size: 18px;
+				font-weight: 700;
+				color: #349546;
+				margin-bottom: 4px;
+			}
+
+			.card__text {
+				font-size: 14px;
+				color: #6c757d;
+			}
+    	</style>
 	</head>
 
 	<body>
-		<div class="wrapper">
-			<a href="out/HeartOfRussian.html" target="_blank">HeartOfRussian</a>
-			<a href="out/HeartOfRussianPromoCode.html" target="_blank">HeartOfRussianPromoCode</a>
-		</div>
+		<div class="container">
+			<h1>Еmail-письма для аптечной сети «Сердце России»</h1>
+			<p>Два коммерческих письма для аптечной сети</p>
+
+			<div class="cards">
+				<a class="card" href="out/HeartOfRussian.html" target="_blank">
+					<div class="card__title">HeartOfRussian</div>
+					<div class="card__text">Акции, баннеры и переход в аптеки вашего города</div>
+				</a>
+
+				<a class="card" href="out/HeartOfRussianPromoCode.html" target="_blank">
+					<div class="card__title">HeartOfRussianPromoCode</div>
+					<div class="card__text">Письмо с промокодом</div>
+				</a>
+			</div>
+    	</div>
 	</body>
 </html>
